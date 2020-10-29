@@ -32,7 +32,7 @@
       </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="https://github.com/IBM-Swift/Swift-Kuery/">
+          <a class="header-link" href="https://github.com/Kitura-Next/Swift-Kuery/">
             <img class="header-icon" src="img/gh.png"/>
             View on GitHub
           </a>
@@ -408,17 +408,17 @@
           <div class="section-content">
             
             <p align="center">
-    <a href="http://kitura.io/">
-        <img src="https://raw.githubusercontent.com/IBM-Swift/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
+    <a href="http://kituranext.org/">
+        <img src="https://raw.githubusercontent.com/Kitura-Next/Kitura/master/Sources/Kitura/resources/kitura-bird.svg?sanitize=true" height="100" alt="Kitura">
     </a>
 </p>
 
 <p align="center">
-    <a href="https://ibm-swift.github.io/Swift-Kuery/index.html">
+    <a href="https://kitura-next.github.io/Swift-Kuery/index.html">
     <img src="https://img.shields.io/badge/apidoc-SwiftKuery-1FBCE4.svg?style=flat" alt="APIDoc">
     </a>
-    <a href="https://travis-ci.org/IBM-Swift/Swift-Kuery">
-    <img src="https://travis-ci.org/IBM-Swift/Swift-Kuery.svg?branch=master" alt="Build Status - Master">
+    <a href="https://travis-ci.org/Kitura-Next/Swift-Kuery">
+    <img src="https://travis-ci.org/Kitura-Next/Swift-Kuery.svg?branch=master" alt="Build Status - Master">
     </a>
     <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
     <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
@@ -431,7 +431,7 @@
 
 <p><code>Swift-Kuery</code> is a pluggable SQL database driver/SDK abstraction layer. Its main idea is to unify the APIs to the various relational databases, providing a Swifty yet SQL-like API. This allows easy switching between databases and forms the basis for an Object-Relational Mapping (ORM) framework.</p>
 
-<p><a href="https://github.com/IBM-Swift/Swift-Kuery-ORM">Swift-Kuery-ORM</a> is an ORM, built on top of Swift-Kuery, which allows you to simplify the persistence of model objects with your server.</p>
+<p><a href="https://github.com/Kitura-Next/Swift-Kuery-ORM">Swift-Kuery-ORM</a> is an ORM, built on top of Swift-Kuery, which allows you to simplify the persistence of model objects with your server.</p>
 
 <p><code>Swift-Kuery</code> is an easy to learn, consumable framework that comes with a set of <a href="#list-of-plugins">implemented plugins</a>.</p>
 <h2 id='table-of-contents' class='heading'>Table of Contents</h2>
@@ -453,7 +453,7 @@
 <p>The latest version of Swift-Kuery requires <strong>Swift 4.0</strong> or newer. You can download this version of the Swift binaries by following this <a href="https://swift.org/download/">link</a>. Compatibility with other Swift versions is not guaranteed.</p>
 <h2 id='usage' class='heading'>Usage</h2>
 
-<p>This example demonstrates how to execute an SQL query using <code>Swift-Kuery</code> with the <a href="https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL">Swift-Kuery-PostgreSQL</a> plugin.</p>
+<p>This example demonstrates how to execute an SQL query using <code>Swift-Kuery</code> with the <a href="https://github.com/Kitura-Next/Swift-Kuery-PostgreSQL">Swift-Kuery-PostgreSQL</a> plugin.</p>
 
 <p>The starting point for this example is an existing Swift package. If you don&rsquo;t have one already, create and enter a directory named e.g. <code>SwiftKueryExample</code>. Now run the swift package&rsquo;s init command, to create an executable type, by running <code>swift package init --type executable</code>.</p>
 <h3 id='creating-a-postgresql-database' class='heading'>Creating A PostgreSQL Database</h3>
@@ -480,11 +480,11 @@ psql school
 </ol>
 <h3 id='update-your-package-swift-file' class='heading'>Update your Package.swift file</h3>
 
-<p>Add Swift-Kuery-PostgreSQL to the dependencies within your application&rsquo;s <code>Package.swift</code> file, this will bring in Swift-Kuery as well. Substitute <code>&quot;x.x.x&quot;</code> with the latest <code>Swift-Kuery-PostgreSQL</code> <a href="https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL/releases">release</a>.</p>
+<p>Add Swift-Kuery-PostgreSQL to the dependencies within your application&rsquo;s <code>Package.swift</code> file, this will bring in Swift-Kuery as well. Substitute <code>&quot;x.x.x&quot;</code> with the latest <code>Swift-Kuery-PostgreSQL</code> <a href="https://github.com/Kitura-Next/Swift-Kuery-PostgreSQL/releases">release</a>.</p>
 <pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
     <span class="o">...</span>
     <span class="c1">// Add this line</span>
-    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"x.x.x"</span><span class="p">),</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/Kitura-Next/Swift-Kuery-PostgreSQL.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"x.x.x"</span><span class="p">),</span>
   <span class="p">],</span>
   <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
     <span class="o">.</span><span class="nf">target</span><span class="p">(</span>
@@ -949,19 +949,19 @@ HAVING SUM(b) NOT IN (SELECT b FROM t1 WHERE a = &lsquo;apple&rsquo;);</strong><
 <h2 id='list-of-plugins' class='heading'>List of plugins</h2>
 
 <ul>
-<li><p><a href="https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL">PostgreSQL</a></p></li>
-<li><p><a href="https://github.com/IBM-Swift/Swift-Kuery-SQLite">SQLite</a></p></li>
-<li><p><a href="https://github.com/IBM-Swift/SwiftKueryMySQL">MySQL</a></p></li>
+<li><p><a href="https://github.com/Kitura-Next/Swift-Kuery-PostgreSQL">PostgreSQL</a></p></li>
+<li><p><a href="https://github.com/Kitura-Next/Swift-Kuery-SQLite">SQLite</a></p></li>
+<li><p><a href="https://github.com/Kitura-Next/SwiftKueryMySQL">MySQL</a></p></li>
 </ul>
 <h2 id='api-documentation' class='heading'>API Documentation</h2>
 
-<p>For more information visit our <a href="https://ibm-swift.github.io/Swift-Kuery/index.html">API reference</a>.</p>
+<p>For more information visit our <a href="https://kitura-next.github.io/Swift-Kuery/index.html">API reference</a>.</p>
 <h2 id='community' class='heading'>Community</h2>
 
 <p>We love to talk server-side Swift, and Kitura. Join our <a href="http://swift-at-ibm-slack.mybluemix.net/">Slack</a> to meet the team!</p>
 <h2 id='license' class='heading'>License</h2>
 
-<p>This library is licensed under Apache 2.0. Full license text is available in <a href="https://github.com/IBM-Swift/Swift-Kuery/blob/master/LICENSE.txt">LICENSE</a>.</p>
+<p>This library is licensed under Apache 2.0. Full license text is available in <a href="https://github.com/Kitura-Next/Swift-Kuery/blob/master/LICENSE.txt">LICENSE</a>.</p>
 
           </div>
         </section>
